@@ -7,7 +7,193 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            #region task 9
+        #region taks 1
+        //l1:
+        //    Console.WriteLine("4 reqemli ededi daxil edin");
+        //    string strvalue = Console.ReadLine();
+        //    bool tru = int.TryParse(strvalue, out int value);
+        //    int say = (int)Math.Log10((int)value) + 1;
+        //    if (!tru)
+        //    {
+        //        goto l1;
+        //    }
+        //    if (say != 4)
+        //    {
+        //        goto l1;
+        //    }
+        //    int sum = 0;
+        //    while (value>0)
+        //    {
+        //        int resudie = value % 10;
+        //        value /= 10;
+        //        sum += resudie;
+        //    }
+        //    Console.WriteLine(sum);
+        #endregion
+
+        #region Task 2
+        //l1:
+        //    Console.Write("6 reqemli ededi daxil edin:");
+        //    string streded=Console.ReadLine();
+        //    bool yoxla = int.TryParse(streded, out int eded);
+
+
+        //    if (!yoxla) 
+        //    {
+        //        goto l1;
+        //    }
+        //    if ((int)Math.Log10(eded) + 1 != 6)
+        //    {
+        //        goto l1;
+        //    }
+        //    eded /= 1000;
+        //    int sum=0;
+        //    while (eded>0)
+        //    {
+        //        int qaliq = eded % 10;
+        //        eded=eded / 10;
+        //        sum+=qaliq;
+
+        //    }
+        //    Console.WriteLine(sum);
+        #endregion
+
+        #region task 3
+        //l1:
+        //    Console.Write("9 reqemli ededi daxil edin:");
+        //    string streded = Console.ReadLine();
+        //    bool yoxla = int.TryParse(streded, out int eded);
+
+
+        //    if (!yoxla)
+        //    {
+        //        goto l1;
+        //    }
+        //    if ((int)Math.Log10(eded) + 1 != 9)
+        //    {
+        //        goto l1;
+        //    }
+        //    eded /= 1000;
+        //    int sum = 0;
+        //    while (eded>999)
+        //    {
+        //        int qaliq = eded % 10;
+        //        eded = eded / 10;
+        //        sum += qaliq;
+
+        //    }
+        //    Console.WriteLine(sum);
+
+        #endregion
+
+        #region task 4
+
+        //l1:
+        //    Console.Write("5 reqemli ededi daxil edin:");
+        //    string streded = Console.ReadLine();
+        //    bool yoxla = int.TryParse(streded, out int eded);
+
+
+        //    if (!yoxla)
+        //    {
+        //        goto l1;
+        //    }
+        //    if ((int)Math.Log10(eded) + 1 != 5)
+        //    {
+        //        goto l1;
+        //    }
+        //   int  qaliq1 = eded % 10;
+        //    eded /= 10000;
+        //   int sum= qaliq1 + eded;
+
+        //    Console.WriteLine(sum);
+        #endregion
+
+        #region taks 5
+        //l1:
+        //    Console.WriteLine("6 reqemli ededi daxil edin");
+        //    string strvalue = Console.ReadLine();
+        //    bool tru = int.TryParse(strvalue, out int value);
+        //    int say = (int)Math.Log10((int)value) + 1;
+        //    if (!tru)
+        //    {
+        //        goto l1;
+        //    }
+        //    if (say != 6)
+        //    {
+        //        goto l1;
+        //    }
+
+        //   int valueilk= value / 100000;
+        //    int resudie = value % 100000;
+        //    int final = resudie * 10 + valueilk;
+        //    Console.WriteLine(final);
+        #endregion
+
+        #region task 6
+        //l1:
+        //Console.Write("8 reqemli ededi daxil edin:");
+        //string streded = Console.ReadLine();
+        //bool yoxla = int.TryParse(streded, out int eded);
+
+
+        //if (!yoxla)
+        //{
+        //    goto l1;
+        //}
+        //if ((int)Math.Log10(eded) + 1 != 8)
+        //{
+        //    goto l1;
+        //}
+        //int qaliq1 = eded % 10;
+        //int qaliq2 = eded / 10000000;
+        //int sum=(eded - qaliq2 * 10000000 - qaliq1) / 10;
+        //Console.WriteLine(sum);
+
+        #endregion
+
+        #region taks 7 
+        //l1:
+        //Console.WriteLine("4 reqemli eded daxil edin");
+        //string streded=Console.ReadLine();
+        //bool say= int.TryParse(streded, out int eded);
+        //if (!say)
+        //{
+        //    goto l1;
+        //}
+
+        //int sum= 0;
+        //while (eded>0)
+        //{
+        //    int qaliq = eded % 10;
+        //    eded=eded/10;
+        //    sum = sum * 10 + qaliq;
+
+        //}
+        //decimal add = (8 * 10000 + sum)*10+8;
+        //Console.WriteLine(add);
+
+        #endregion
+
+        #region task 8  
+
+        //Console.WriteLine("4 reqemli eded daxil edin");
+        //string streded = Console.ReadLine();
+        //bool say = int.TryParse(streded, out int eded);
+        //if (!say)
+        //{
+        //    goto l1;
+        //}
+
+        //int qaliq = eded % 10;
+        //int qaliq3 = eded % 1000;
+        //int eded3=qaliq3/ 100;
+        //int cem = qaliq + eded3;
+        //Console.WriteLine(cem);
+
+        #endregion
+
+        #region task 9
         l1:
             Console.Write("9 reqemli eded daxil et: ");
 
@@ -36,7 +222,7 @@ namespace ConsoleApp1
             Console.WriteLine(result);
             #endregion
 
-            #region task 10            
+        #region task 10            
             //l1:
             //    Console.Write("9 reqemli eded daxil et: ");
 
@@ -85,7 +271,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region task 11
+        #region task 11
             //l1:
             //    Console.Write(" ededi daxil et: ");
 
@@ -113,7 +299,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region task 12
+        #region task 12
             //l1:
             //    Console.Write("ilk ededi daxil et: ");
 
@@ -161,7 +347,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region task 13
+        #region task 13
 
             //l1:
             //    Console.Write("ilk ededi daxil et: ");
@@ -208,7 +394,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            #region TASK 14
+        #region TASK 14
 
             //l1:
             //    Console.Write("ilk ededi daxil et: ");
@@ -293,7 +479,7 @@ namespace ConsoleApp1
             //Console.WriteLine(lastResult);
             #endregion
 
-            #region task 15
+        #region task 15
             //l1:
             //    Console.Write("ilk ededi daxil et: ");
 
