@@ -480,116 +480,116 @@ namespace ConsoleApp1
         #endregion
 
         #region task 15
-        l1:
-            Console.Write("ilk ededi daxil et: ");
+        //l1:
+        //    Console.Write("ilk ededi daxil et: ");
 
-            if (!int.TryParse(Console.ReadLine(), out int value))
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l1;
-            }
-            if (((int)Math.Log10(value) + 1) != 3)
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l1;
-            }
-        l2:
-            Console.Write(" ededi daxil et: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int value))
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l1;
+        //    }
+        //    if (((int)Math.Log10(value) + 1) != 3)
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l1;
+        //    }
+        //l2:
+        //    Console.Write(" ededi daxil et: ");
 
-            if (!int.TryParse(Console.ReadLine(), out int scndValue))
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l2;
-            }
-            if (((int)Math.Log10(scndValue) + 1) != 3)
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l2;
-            }
-        l3:
-            Console.Write(" ededi daxil et: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int scndValue))
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l2;
+        //    }
+        //    if (((int)Math.Log10(scndValue) + 1) != 3)
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l2;
+        //    }
+        //l3:
+        //    Console.Write(" ededi daxil et: ");
 
-            if (!int.TryParse(Console.ReadLine(), out int thirdvalue))
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l3;
-            }
-            if (((int)Math.Log10(thirdvalue) + 1) != 6)
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l3;
-            }
-        l4:
-            Console.Write(" ededi daxil et: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int thirdvalue))
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l3;
+        //    }
+        //    if (((int)Math.Log10(thirdvalue) + 1) != 6)
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l3;
+        //    }
+        //l4:
+        //    Console.Write(" ededi daxil et: ");
 
-            if (!int.TryParse(Console.ReadLine(), out int valueFour))
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l4;
-            }
-            if (((int)Math.Log10(valueFour) + 1) != 6)
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l4;
-            }
-        l5:
-            Console.Write(" ededi daxil et: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int valueFour))
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l4;
+        //    }
+        //    if (((int)Math.Log10(valueFour) + 1) != 6)
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l4;
+        //    }
+        //l5:
+        //    Console.Write(" ededi daxil et: ");
 
-            if (!int.TryParse(Console.ReadLine(), out int fifthvalue))
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l5;
-            }
-            if (((int)Math.Log10(fifthvalue) + 1) != 7)
-            {
-                Console.Write("ededi duzgun daxil edilmemisdir ");
-                goto l5;
-            }
-            int stepFirst = value + scndValue;
-            int stepTwo = (int)Math.Pow(stepFirst % 100, 2);
-            int stepThree = stepTwo + (value * 1000 + scndValue);
-            int stepFour = stepThree - fifthvalue % 100000;
-            int stepFive = (thirdvalue + valueFour) % 1000;
-            int stepSix = stepFour + stepFive;
-            int sum = 0;
-            int newnumber = fifthvalue;
-            while (fifthvalue > 0)
-            {
-                int remainder = fifthvalue % 10;
-                fifthvalue /= 10;
-                sum += remainder;
+        //    if (!int.TryParse(Console.ReadLine(), out int fifthvalue))
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l5;
+        //    }
+        //    if (((int)Math.Log10(fifthvalue) + 1) != 7)
+        //    {
+        //        Console.Write("ededi duzgun daxil edilmemisdir ");
+        //        goto l5;
+        //    }
+        //    int stepFirst = value + scndValue;
+        //    int stepTwo = (int)Math.Pow(stepFirst % 100, 2);
+        //    int stepThree = stepTwo + (value * 1000 + scndValue);
+        //    int stepFour = stepThree - fifthvalue % 100000;
+        //    int stepFive = (thirdvalue + valueFour) % 1000;
+        //    int stepSix = stepFour + stepFive;
+        //    int sum = 0;
+        //    int newnumber = fifthvalue;
+        //    while (fifthvalue > 0)
+        //    {
+        //        int remainder = fifthvalue % 10;
+        //        fifthvalue /= 10;
+        //        sum += remainder;
 
-            }
-            int sum2 = 0;
-            while (sum > 0)
-            {
-                int remainder = sum % 10;
-                sum /= 10;
-                sum2 = sum2 * 10 + remainder;
-            }
-            int stepSeven = stepSix + sum2;
-            int step = stepSeven * 100 + 11;
-            int sum3 = 0;
-            while (newnumber > 0)
-            {
-                int remainder = newnumber % 10;
-                newnumber /= 100;
-                sum3 = sum3 * 10 + remainder;
+        //    }
+        //    int sum2 = 0;
+        //    while (sum > 0)
+        //    {
+        //        int remainder = sum % 10;
+        //        sum /= 10;
+        //        sum2 = sum2 * 10 + remainder;
+        //    }
+        //    int stepSeven = stepSix + sum2;
+        //    int step = stepSeven * 100 + 11;
+        //    int sum3 = 0;
+        //    while (newnumber > 0)
+        //    {
+        //        int remainder = newnumber % 10;
+        //        newnumber /= 100;
+        //        sum3 = sum3 * 10 + remainder;
 
-            }
-            int sum4 = 0;
-            while (sum3 > 0)
-            {
-                int remainder = sum3 % 10;
-                sum3 /= 10;
-                sum4 = sum4 * 10 + remainder;
-            }
-            long lastStep = step - sum4;
-            long persent = (long)lastStep % 10;
-            long result = 1000 * (lastStep / 10) + 880 + persent;
+        //    }
+        //    int sum4 = 0;
+        //    while (sum3 > 0)
+        //    {
+        //        int remainder = sum3 % 10;
+        //        sum3 /= 10;
+        //        sum4 = sum4 * 10 + remainder;
+        //    }
+        //    long lastStep = step - sum4;
+        //    long persent = (long)lastStep % 10;
+        //    long result = 1000 * (lastStep / 10) + 880 + persent;
 
-            Console.WriteLine(lastStep);
-            Console.WriteLine(result);
+        //    Console.WriteLine(lastStep);
+        //    Console.WriteLine(result);
 
             #endregion
 
